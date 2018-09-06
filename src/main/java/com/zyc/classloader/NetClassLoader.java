@@ -36,7 +36,7 @@ public class NetClassLoader extends ClassLoader {
 		try {
 			is = new URL(path).openStream();
 			bytesStream = new ByteArrayOutputStream();
-			byte[] buffer = new byte[4096];
+			byte[] buffer = new byte[2048];
 			int len = 0;
 			while ((len = is.read(buffer)) != -1) {
 				bytesStream.write(buffer, 0, len);

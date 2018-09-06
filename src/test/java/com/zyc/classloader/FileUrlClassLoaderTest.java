@@ -14,7 +14,7 @@ public class FileUrlClassLoaderTest {
 		URL[] urls = { new File("C:\\class").toURI().toURL() };
 		loader = new FileUrlClassLoader(urls);
 		
-		Class<?> clazz = loader.loadClass("demo.test.User");
+		Class<?> clazz = loader.loadClass("com.zyc.classloader.tmps.User");
 		System.out.println(clazz.newInstance().toString());
 	}
 }
